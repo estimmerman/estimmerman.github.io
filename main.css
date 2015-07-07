@@ -1,3 +1,153 @@
-.header {
-	font-size: 25px;
+a, span, h1, h2, h3, h4, h5, h6, p {
+	font-family: 'Lato', sans-serif;
+}
+
+body{
+}
+
+html{
+
+}
+
+a{
+	
+}
+
+#main-navbar{
+	background-color: #129793;
+	border: 0;
+	padding: 15px;
+	margin: 0;
+}
+
+#main-navbar a{
+	color: #fff;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+#main-navbar a:hover{
+	color: #C8F0FA;
+}
+
+header{
+	text-align: center;
+	background-color: #129793;
+	margin-top: -20px;
+	padding-top: 75px;
+	padding-bottom: 100px;
+}
+
+header #name{
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	letter-spacing: 5px;
+	font-size: 50px;
+	color: #fff;
+}
+
+header .header-info{
+	color: #004F63;
+}
+
+section{
+	min-height: 250px;
+	padding: 20px;
+	-webkit-box-shadow: inset 0 1px 0 0 rgba(0,0,0,.05),inset 0 3px 3px 0 rgba(0,0,0,.1);
+	-moz-box-shadow: inset 0 1px 0 0 rgba(0,0,0,.05),inset 0 3px 3px 0 rgba(0,0,0,.1);
+	box-shadow: inset 0 1px 0 0 rgba(0,0,0,.05),inset 0 3px 3px 0 rgba(0,0,0,.1);
+}
+
+section h1{
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	letter-spacing: 5px;
+}
+
+section#about{
+	background-color: #FFF5C3;
+}
+
+section#projects{
+	background-color: #FF7260;
+}
+
+section#contact{
+	background-color: #9BD7D5;
+}
+
+#footer-navbar{
+	background-color: #505050;
+	border: 0;
+	margin-bottom: -20px;
+	border-radius: 0;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	padding-left: 50px;
+}
+
+#footer-navbar .container{
+	margin: 0;
+	width: 100% !important;
+}
+
+#footer-navbar a{
+	color: #fff;
+	letter-spacing: 1px;
+}
+
+#footer-navbar a:hover{
+	color: #C8F0FA;
+	text-decoration: none;
+}
+
+#footer-navbar li{
+	margin-top: 10px;
+	padding-right: 20px;
+}
+
+#footer-navbar .icon-a{
+	padding-left: 5px;
+}
+
+#footer-navbar #note{
+	color: #fff;
+	margin-top: 10px;
+	margin-bottom: 0;
+	float: right;
+}
+
+@media (max-width: 768px){
+	#main-navbar .container{
+		text-align: center;
+	}
+
+	header{
+		padding-top: 25px;
+		padding-bottom: 50px;
+	}
+
+	header #name{
+		font-size: 30px;
+	}
+
+	header .header-info{
+		font-size: 17px;
+	}
+
+	section h1{
+		font-size: 20px;
+	}
+
+	#footer-navbar{
+		padding-left: 0;
+	}
+
+	#footer-navbar .container{
+		text-align: center;
+		float: none;
+	}
 }
