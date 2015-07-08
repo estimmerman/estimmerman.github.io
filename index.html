@@ -32,13 +32,13 @@
     		<h1 id="name">Eric Timmerman</h1>
     		<h3 class="header-info">Computer Science Enthusiast | Harvard College</h3>
     	</header>
-    	<section id="about">
+    	<section id="about" class="anchor-tag">
     		<h1>About Me</h1>
     	</section>
-    	<section id="projects">
+    	<section id="projects" class="anchor-tag">
     		<h1>Projects</h1>
     	</section>
-    	<section id="contact">
+    	<section id="contact" class="anchor-tag">
     		<h1>Contact Me</h1>
     	</section>
 		<nav class="navbar navbar-default" id="footer-navbar">
@@ -53,5 +53,40 @@
 		  </div>
 		</nav>
     </div>
+
+    <script>
+	    var $root = $('html, body');
+		$('a[href*=#]').click(function() {
+		    var href = $.attr(this, 'href');
+		    $root.animate({
+		        scrollTop: $(href).offset().top
+		    }, 500, function () {
+		        window.location.hash = href;
+		    });
+		    return false;
+		});
+
+	    var $currentHash = "";
+	    $(document).scroll(function () {
+	        $('.anchor-tag').each(function () {
+	            var top = window.pageYOffset;
+	            var distance = top - $(this).offset().top;
+	            var hash = $(this).attr('id');
+
+	            if(top < 10){
+	            	window.location.hash = "";
+	            	$currentHash = "";
+	            	return;
+	            }
+
+	            if (distance < 75 && distance > -75 && $currentHash != hash) {
+	            	$(this).removeAttr('id');
+	                window.location.hash = hash;
+	                $(this).attr('id', hash);
+	                $currentHash = hash;
+	            }
+	        });
+	    });
+	</script>
   </body>
 </html>
