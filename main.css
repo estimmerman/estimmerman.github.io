@@ -3,6 +3,7 @@ a, span, h1, h2, h3, h4, h5, h6, p {
 }
 
 body{
+	overflow-x: hidden;
 }
 
 html{
@@ -10,7 +11,11 @@ html{
 }
 
 a{
-	
+	-o-transition:.3s;
+	-ms-transition:.3s;
+	-moz-transition:.3s;
+	-webkit-transition:.3s;
+	transition:.3s;
 }
 
 #main-navbar{
@@ -33,7 +38,6 @@ a{
 header{
 	text-align: center;
 	background-color: #129793;
-	margin-top: -20px;
 	padding-top: 75px;
 	padding-bottom: 100px;
 }
@@ -53,7 +57,7 @@ header .header-info{
 
 section{
 	min-height: 250px;
-	padding: 20px;
+	padding: 20px 20px 50px 20px;
 	-webkit-box-shadow: inset 0 1px 0 0 rgba(0,0,0,.05),inset 0 3px 3px 0 rgba(0,0,0,.1);
 	-moz-box-shadow: inset 0 1px 0 0 rgba(0,0,0,.05),inset 0 3px 3px 0 rgba(0,0,0,.1);
 	box-shadow: inset 0 1px 0 0 rgba(0,0,0,.05),inset 0 3px 3px 0 rgba(0,0,0,.1);
@@ -77,6 +81,10 @@ section#projects{
 
 section#contact{
 	background-color: #9BD7D5;
+}
+
+section .section-header{
+	margin-bottom: 25px;
 }
 
 #footer-navbar{
@@ -120,6 +128,81 @@ section#contact{
 	float: right;
 }
 
+#footer-nav-content{
+	opacity: 0;
+}
+
+#back-to-top{
+	display: none;
+	opacity: 0;
+	margin: 50px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 60px;
+	height: 60px;
+	z-index: 100;
+	color: #ffffff;
+	background-color: #999375;
+	text-align: center;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 1px 0 0 rgba(0,0,0,.05),0 3px 1px 0 rgba(0,0,0,.1);
+	-moz-box-shadow: 0 1px 0 0 rgba(0,0,0,.05),0 3px 1px 0 rgba(0,0,0,.1);
+	box-shadow: 0 1px 0 0 rgba(0,0,0,.05),0 3px 1px 0 rgba(0,0,0,.1);
+}
+
+#back-to-top-icon{
+	font-size: 25px;
+	margin-top: 15px;
+}
+
+#back-to-top.about-active{
+	background-color: #999375 !important;
+}
+
+#back-to-top.projects-active{
+	background-color: #99443A !important;
+}
+
+#back-to-top.contact-active{
+	background-color: #5D8180 !important;
+}
+
+#about-image{
+	width: 150px;
+	height: 150px;
+	border-radius: 75px;
+	border: 5px solid #999375;
+}
+
+#about-bio{
+	font-size: 18px;
+	text-align: center;
+}
+
+#about-bio-xs{
+	font-size: 18px;
+	text-align: center;
+	padding: 20px 20px 0px 20px;
+}
+
+#about a{
+	color: #990000;
+}
+
+#about a:hover{
+	color: #B84D4D;
+	text-decoration: none;
+}
+
+.media{
+	overflow: visible;
+}
+
+.media-body{
+	padding: 10px;
+}
+
 @media (max-width: 768px){
 	#main-navbar .container{
 		text-align: center;
@@ -127,7 +210,7 @@ section#contact{
 
 	header{
 		padding-top: 25px;
-		padding-bottom: 50px;
+		padding-bottom: 75px;
 	}
 
 	header #name{
@@ -149,5 +232,19 @@ section#contact{
 	#footer-navbar .container{
 		text-align: center;
 		float: none;
+	}
+
+	#footer-navbar #note{
+		float: none;
+	}
+
+	#back-to-top{
+		margin: 30px;
+		width: 50px;
+		height: 50px;
+	}
+
+	#back-to-top-icon{
+		font-size: 20px;
 	}
 }
