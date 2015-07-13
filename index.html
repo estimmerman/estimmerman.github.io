@@ -16,20 +16,15 @@
     <script src="javascripts/TweenMax.min.js"></script>
     <script src="javascripts/animation.gsap.min.js"></script>
 	<script src="javascripts/debug.addIndicators.min.js"></script>
-	<script src="index.js" type="text/javascript"></script>
-
+	<script src="javascripts/index.js"></script>
 	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.teal-red.min.css" />
 	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
-
-	<!-- // <script src="javascripts/ScrollMagic.min.js"></script> -->
-    <!-- // <script src="javascripts/animation.gsap.min.js"></script> -->
-	<!-- // <script src="javascripts/debug.addIndicators.min.js"></script> -->
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#main-navbar">
     <div id="page-content">
     	<nav class="navbar navbar-default navbar-static-top" id="main-navbar">
 		  <div class="container">
@@ -43,6 +38,7 @@
     	<header>
     		<h1 id="name">Eric Timmerman</h1>
     		<h3 class="header-info">Computer Science Enthusiast | Harvard College</h3>
+    		<a href="#about"><i class="fa fa-arrow-circle-o-down fa-inverse fa-3x animated infinite bounce" id="header-go-down"></i></a>
     	</header>
     	<section id="about" class="anchor-tag">
     		<h1 id="about-header" class="section-header">About Me</h1>
@@ -77,12 +73,12 @@
     			</li>
     			<li class="card">
     				<div class="mdl-card mdl-shadow--2dp project-card">
-					  <div class="mdl-card__title" id="yiftee-android">
-					    <h2 class="mdl-card__title-text">Android Redesign</h2>
+					  <div class="mdl-card__title android">
+					    <i class="fa fa-android fa-inverse fa-5x project-card-icon"></i>
 					  </div>
 					  <div class="mdl-card__supporting-text">
-					    Description
-						</br>
+					  	<h2 class="mdl-card__title-text">Android Redesign</h2>
+					  	<p class="project-card-overview">Overview</p>
 					    <div id="yiftee-android-more" class="card-extra-content">
 					    </div>
 					  </div>
@@ -93,12 +89,12 @@
 		    	</li>
 		    	<li class="card">
     				<div class="mdl-card mdl-shadow--2dp project-card">
-					  <div class="mdl-card__title" id="yiftee-twitter">
-					    <h2 class="mdl-card__title-text">Twitter Integration</h2>
+					  <div class="mdl-card__title twitter">
+					  	<i class="fa fa-twitter fa-inverse fa-5x project-card-icon"></i>
 					  </div>
 					  <div class="mdl-card__supporting-text">
-					    Description
-						</br>
+					  	<h2 class="mdl-card__title-text">Twitter Integration</h2>
+					    <p class="project-card-overview">Description</p>
 					    <div id="yiftee-project-2-more" class="card-extra-content">
 					    </div>
 					  </div>
@@ -109,7 +105,7 @@
 		    	</li>
 		    	<li class="card">
     				<div class="mdl-card mdl-shadow--2dp project-card">
-					  <div class="mdl-card__title" id="yiftee-project-3">
+					  <div class="mdl-card__title project-3">
 					    <h2 class="mdl-card__title-text">Project #3</h2>
 					  </div>
 					  <div class="mdl-card__supporting-text">
@@ -125,7 +121,7 @@
 		    	</li>
 		    	<li class="card">
     				<div class="mdl-card mdl-shadow--2dp project-card">
-					  <div class="mdl-card__title" id="yiftee-project-4">
+					  <div class="mdl-card__title project-4">
 					    <h2 class="mdl-card__title-text">Project #4</h2>
 					  </div>
 					  <div class="mdl-card__supporting-text">
@@ -152,7 +148,7 @@
 	    		<li><i class="fa fa-file-text-o fa-inverse"><a href="assets/Eric_Timmerman_Resume.pdf" class="icon-a" target="_blank">Resume</a></i></li>
 	    		<li><i class="fa fa-envelope-o fa-inverse"><a href="mailto:estimmerman@gmail.com" class="icon-a">Email Me!</a></i></li>
 		    </ul>
-		    <p id="note">Made in loving memory of my social life.</p>
+		    <p id="note">&#169; 2015 Eric Timmerman. All rights reserved.</p>
 		  </div>
 		</nav>
 		<a href="#" id="back-to-top"><i class="fa fa-chevron-up fa-inverse" id="back-to-top-icon"></i></a>

@@ -1,9 +1,19 @@
 $(document).ready(function(){
+	$('body').scrollspy({ target: '#main-navbar' })
+
 	var $controller = new ScrollMagic.Controller();
 
 	function getElementHeight(element){
 		return element.outerHeight();
 	};
+
+	// Header Scenes
+	var goDownHeaderScene = new ScrollMagic.Scene({
+		triggerElement: "#about", offset: 75, duration: 200
+	})
+	.setTween("#header-go-down", 0.5, {opacity: 0})
+	// .addIndicators({name: "1 (duration: 0)"})
+	.addTo($controller);
 
 	// Section ABOUT Scenes
 	var aboutHeaderScene = new ScrollMagic.Scene({
@@ -55,42 +65,27 @@ $(document).ready(function(){
 	    if(href == "#"){
 			$root.animate({
 		        scrollTop: 0
-		    }, 250, function () {
-		        window.location.hash = "";
-		    });
+		    }, 250);
 	    } else {
 		    $root.animate({
 		        scrollTop: $(href).offset().top
-		    }, 500, function () {
-		        window.location.hash = href;
-		    });
+		    }, 500);
 		}
 	    return false;
 	});
 
-    $(document).scroll(function () {
-		var top = window.pageYOffset;
-
-        $('.anchor-tag').each(function () {
-            var distance = top - $(this).offset().top;
-            var hash = $(this).attr('id');
-
-            if(top < 10){
-            	window.location.hash = "";
-            	$currentHash = "";
-            	document.title = "Eric Timmerman";
-            	return;
-            }
-
-            if (distance < 100 && distance > -100 && $currentHash != hash) {
-            	$(this).removeAttr('id');
-                window.location.hash = hash;
-                $(this).attr('id', hash);
-                $currentHash = hash;
-                document.title = hash.charAt(0).toUpperCase() + hash.slice(1) + " - Eric Timmerman";
-            }
-        });
-    });
+	$(window).on('activate.bs.scrollspy', function(e) {
+	  var $hash, $node;
+	  $hash = $("a[href^='#']", e.target).attr("href").replace(/^#/, '');
+	  $node = $('#' + $hash);
+	  if ($node.length) {
+	    $node.attr('id', '');
+	  }
+	  window.location.hash = $hash;
+	  if ($node.length) {
+	    return $node.attr('id', $hash);
+	  }
+	});
 });
 
 function expandCard(id, clickedEl){

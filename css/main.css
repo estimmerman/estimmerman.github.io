@@ -31,6 +31,10 @@ a{
 	text-transform: uppercase;
 }
 
+#main-navbar .active > a{
+	background-color: inherit;
+}
+
 #main-navbar a:hover{
 	color: #C8F0FA;
 
@@ -49,8 +53,8 @@ a{
 header{
 	text-align: center;
 	background-color: #129793;
-	padding-top: 75px;
-	padding-bottom: 100px;
+	padding-top: 150px;
+	padding-bottom: 25px;
 }
 
 header #name{
@@ -64,6 +68,13 @@ header #name{
 
 header .header-info{
 	color: #004F63;
+}
+
+header #header-go-down{
+	margin-top: 150px;
+	opacity: 0.9;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
 }
 
 section{
@@ -219,10 +230,6 @@ section .section-header{
 	text-decoration: none;
 }
 
-.media{
-	overflow: visible;
-}
-
 .media-body{
 	padding: 10px;
 }
@@ -266,27 +273,19 @@ section .section-header{
 
 .project-card > .mdl-card__title{
     min-height: 150px;
-    color: #fff;
 }
 
-.project-card > .mdl-card__title#yiftee-android{
-    background-color: #a4c639;
-}
-
-.project-card > .mdl-card__title#yiftee-twitter{
-    background-color: #00aced;
-}
-
-.project-card > .mdl-card__title#yiftee-project-3{
-    background-color: yellow;
-}
-
-.project-card > .mdl-card__title#yiftee-project-4{
-    background-color: purple;
+.project-card > .mdl-card__title > .project-card-icon{
+	margin: auto;
 }
 
 .project-card > .mdl-card__title-text{
 
+}
+
+.project-card > .mdl-card__supporting-text > .project-card-overview{
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .project-card > .mdl-card__supporting-text > .card-extra-content{
@@ -303,19 +302,35 @@ section .section-header{
 
 }
 
-.project-card.mdl-card > .expand-action > .android-dark {
+.android{
+    background-color: #a4c639;
+}
+
+.twitter{
+    background-color: #00aced;
+}
+
+.project-3{
+    background-color: yellow;
+}
+
+.project-4{
+    background-color: purple;
+}
+
+.android-dark {
 	color: #738B28;
 }
 
-.project-card.mdl-card > .expand-action > .twitter-dark {
+.twitter-dark {
 	color: #0078A6;
 }
 
-.project-card.mdl-card > .expand-action > .project-3-dark {
+.project-3-dark {
 	color: #738B28;
 }
 
-.project-card.mdl-card > .expand-action > .project-4-dark {
+.project-4-dark {
 	color: #738B28;
 }
 
@@ -326,7 +341,6 @@ section .section-header{
 
 	header{
 		padding-top: 25px;
-		padding-bottom: 75px;
 	}
 
 	header #name{
