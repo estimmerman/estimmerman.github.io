@@ -86,11 +86,29 @@ $(document).ready(function(){
 	    return $node.attr('id', $hash);
 	  }
 	});
+
+	$("#android-carousel").owlCarousel({
+		singleItem: true,
+		paginationSpeed: 300,
+		lazyLoad: true,
+		autoPlay: 1500
+	});
+	$androidCarousel = $("#android-carousel").data('owlCarousel');
+	$androidCarousel.stop();
 });
 
 function expandCard(id, clickedEl){
 	var elementToToggle = $("#" + id);
 	var iconEl = $(clickedEl).find(".expand-icon").first();
+
+	// Autoplay Android Presentation
+	if(id == 'yiftee-android-more'){
+		if(elementToToggle.css('display') != 'block'){
+			$androidCarousel.play();
+		} else {
+			$androidCarousel.stop();
+		}
+	}
 
 	elementToToggle.slideToggle("slow", "swing", function(){
 		if(iconEl.hasClass("fa-ellipsis-h")){

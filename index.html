@@ -15,7 +15,8 @@
 	<script src="javascripts/ScrollMagic.min.js"></script>
     <script src="javascripts/TweenMax.min.js"></script>
     <script src="javascripts/animation.gsap.min.js"></script>
-	<script src="javascripts/debug.addIndicators.min.js"></script>
+	<script src="javascripts/debug.addIndicators.min.js"></script> 
+	<script src="javascripts/owl.carousel.min.js"></script>
 	<script src="javascripts/index.js"></script>
 	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.teal-red.min.css" />
 	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
@@ -23,6 +24,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.css">
   </head>
   <body data-spy="scroll" data-target="#main-navbar">
     <div id="page-content">
@@ -67,8 +70,9 @@
     		<h1 id="experience-header" class="section-header">Experience</h1>
     		<ol id="experienceList">
     			<li>
-    				<div class="row" style="text-align: center;">
+    				<div class="row experience-bar">
 		    			<h1 class="experience-header">Yiftee - Local Gifts, On-the-Go</h1>
+		    			<h4 class="experience-date">May - August '14 | Jan - August '15</h4>
     				</div>
     			</li>
     			<li class="card">
@@ -78,8 +82,20 @@
 					  </div>
 					  <div class="mdl-card__supporting-text">
 					  	<h2 class="mdl-card__title-text">Android Redesign</h2>
-					  	<p class="project-card-overview">Overview</p>
+					  	<p class="project-card-overview">Developed the company's Android app in accordance with Material Design standards.</p>
 					    <div id="yiftee-android-more" class="card-extra-content">
+					    	<div id="android-carousel" class="owl-carousel owl-theme">
+							  <div class="carousel-item"><img class="lazyOwl" data-src="images/android-0.png" alt="Login"></div>
+							  <div class="carousel-item"><img class="lazyOwl" data-src="images/android-1.png" alt="Gift Wallet"></div>
+  							  <div class="carousel-item"><img class="lazyOwl" data-src="images/android-2.png" alt="Navigation Menu"></div>
+  							  <div class="carousel-item"><img class="lazyOwl" data-src="images/android-3.png" alt="Opening a Gift"></div>
+							  <div class="carousel-item"><img class="lazyOwl" data-src="images/android-4.png" alt="Main Gift Screen"></div>
+							  <div class="carousel-item"><img class="lazyOwl" data-src="images/android-5.png" alt="Saying Thanks"></div>
+							  <div class="carousel-item"><img class="lazyOwl" data-src="images/android-6.png" alt="Exchange Screen"></div>
+							  <div class="carousel-item"><img class="lazyOwl" data-src="images/android-7.png" alt="Merchant Details"></div>
+							  <div class="carousel-item"><img class="lazyOwl" data-src="images/android-8.png" alt="Using a Gift"></div>
+							  <div class="carousel-item"><img class="lazyOwl" data-src="images/android-9.png" alt="Redemption"></div>
+							</div>
 					    </div>
 					  </div>
 					  <div class="mdl-card__actions mdl-card--border expand-action mdl-button mdl-js-button" onclick="expandCard('yiftee-android-more', this)">
