@@ -18,6 +18,11 @@ a{
 	transition:.3s;
 }
 
+.p-small{
+	font-size: 12px;
+	line-height: 18px;
+}
+
 #main-navbar{
 	background-color: #129793;
 	border: 0;
@@ -250,13 +255,18 @@ section .section-header{
 
 #experienceList .experience-bar{
 	text-align: center;
+	margin: 5px;
 }
 
 #experienceList .experience-header{
 	color: #fff;
 }
 
-#experienceList .experience-date{
+#experienceList .experience-dates{
+	color: #fff;
+}
+
+#experienceList .experience-languages{
 	color: #fff;
 }
 
@@ -299,6 +309,7 @@ section .section-header{
 .project-card > .mdl-card__supporting-text > .project-card-overview{
 	margin-top: 10px;
 	margin-bottom: 10px;
+	line-height: 20px;
 }
 
 .project-card > .mdl-card__supporting-text > .card-extra-content{
@@ -383,8 +394,12 @@ section .section-header{
 		font-size: 25px;
 	}
 
-	#experienceList .experience-date{
+	#experienceList .experience-dates{
 		font-size: 15px;
+	}
+
+	#experienceList .experience-languages{
+		font-size: 12px;
 	}
 
 	#footer-navbar{
