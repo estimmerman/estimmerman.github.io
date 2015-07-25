@@ -337,6 +337,11 @@ section .section-header{
 	max-width: 150px;
 }
 
+.owl-carousel .carousel-item.item-large img{
+	width: 100%;
+	max-width: 500px;
+}
+
 .android{
     background-color: #a4c639;
 }
@@ -345,12 +350,24 @@ section .section-header{
     background-color: #00aced;
 }
 
-.project-3{
-    background-color: yellow;
+.iso{
+    background-color: #FFA03F;
 }
 
-.project-4{
-    background-color: purple;
+.merchant{
+    background-color: #990099;
+}
+
+.print-express{
+	background-color: #E6E600;
+}
+
+.data-visuals{
+	background-color: #5CE65C;
+}
+
+.profile-resume{
+	background-color: #00E6E6;
 }
 
 .android-dark {
@@ -361,12 +378,20 @@ section .section-header{
 	color: #0078A6;
 }
 
-.project-3-dark {
-	color: #738B28;
+.iso-dark {
+	color: #B2702C;
 }
 
-.project-4-dark {
-	color: #738B28;
+.merchant-dark {
+	color: #6B006B;
+}
+
+.data-visuals-dark{
+	color: #40A140;
+}
+
+.profile-resume-dark{
+	color: #00A1A1;
 }
 
 @media (max-width: 875px){
@@ -427,6 +452,14 @@ section .section-header{
 		margin-top: 30px;
 	}
 
+	.project-card.mdl-card:hover{
+		-webkit-transform: none;
+	    -moz-transform: none;
+	    -ms-transform: none;
+	    -o-transform: none;
+	    transform: none;
+	}
+
 }
 
 @media (max-width: 768px){
@@ -440,14 +473,6 @@ section .section-header{
 	}
 
 	#back-to-top:hover{
-		-webkit-transform: none;
-	    -moz-transform: none;
-	    -ms-transform: none;
-	    -o-transform: none;
-	    transform: none;
-	}
-
-	.project-card.mdl-card:hover{
 		-webkit-transform: none;
 	    -moz-transform: none;
 	    -ms-transform: none;

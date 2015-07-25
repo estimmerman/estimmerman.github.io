@@ -95,6 +95,33 @@ $(document).ready(function(){
 	});
 	$androidCarousel = $("#android-carousel").data('owlCarousel');
 	$androidCarousel.stop();
+
+	$("#twitter-carousel").owlCarousel({
+		singleItem: true,
+		paginationSpeed: 300,
+		lazyLoad: true,
+		autoPlay: 1500
+	});
+	$twitterCarousel = $("#twitter-carousel").data('owlCarousel');
+	$twitterCarousel.stop();
+
+	$("#iso-carousel").owlCarousel({
+		singleItem: true,
+		paginationSpeed: 300,
+		lazyLoad: true,
+		autoPlay: 1500
+	});
+	$isoCarousel = $("#iso-carousel").data('owlCarousel');
+	$isoCarousel.stop();
+
+	$("#merchant-carousel").owlCarousel({
+		singleItem: true,
+		paginationSpeed: 300,
+		lazyLoad: true,
+		autoPlay: 1500
+	});
+	$merchantCarousel = $("#merchant-carousel").data('owlCarousel');
+	$merchantCarousel.stop();
 });
 
 function expandCard(id, clickedEl){
@@ -107,6 +134,24 @@ function expandCard(id, clickedEl){
 			$androidCarousel.play();
 		} else {
 			$androidCarousel.stop();
+		}
+	} else if (id == 'yiftee-twitter-more'){
+		if(elementToToggle.css('display') != 'block'){
+			$twitterCarousel.play();
+		} else {
+			$twitterCarousel.stop();
+		}
+	} else if (id == 'yiftee-iso-more'){
+		if(elementToToggle.css('display') != 'block'){
+			$isoCarousel.play();
+		} else {
+			$isoCarousel.stop();
+		}
+	} else if (id == 'yiftee-merchant-more'){
+		if(elementToToggle.css('display') != 'block'){
+			$merchantCarousel.play();
+		} else {
+			$merchantCarousel.stop();
 		}
 	}
 
