@@ -342,6 +342,10 @@ section .section-header{
 	max-width: 500px;
 }
 
+.video{
+	margin-top: -50px;
+}
+
 .android{
     background-color: #a4c639;
 }

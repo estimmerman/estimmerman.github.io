@@ -12,7 +12,6 @@ $(document).ready(function(){
 		triggerElement: "#about", offset: 75, duration: 200
 	})
 	.setTween("#header-go-down", 0.5, {opacity: 0})
-	// .addIndicators({name: "1 (duration: 0)"})
 	.addTo($controller);
 
 	// Section ABOUT Scenes
@@ -20,7 +19,6 @@ $(document).ready(function(){
 		triggerElement: "#about", offset: 75
 	})
 	.setTween("#about-header", 0.5, {scale: 1.5})
-	// .addIndicators({name: "1 (duration: 0)"})
 	.setClassToggle("#back-to-top", "about-active")
 	.addTo($controller);
 
@@ -29,25 +27,22 @@ $(document).ready(function(){
 		triggerElement: "#experience", offset: 75
 	})
 	.setTween("#experience-header", 0.5, {scale: 1.5})
-	// .addIndicators({name: "1 (duration: 0)"})
 	.setClassToggle("#back-to-top", "experience-active")
 	.addTo($controller);
 
 	// Section CONTACT Scenes
-	var contactHeaderScene = new ScrollMagic.Scene({
-		triggerElement: "#contact", offset: 75
-	})
-	.setTween("#contact-header", 0.5, {scale: 1.5})
-	// .addIndicators({name: "1 (duration: 0)"})
-	.setClassToggle("#back-to-top", "contact-active")
-	.addTo($controller);
+	// var contactHeaderScene = new ScrollMagic.Scene({
+	// 	triggerElement: "#contact", offset: 75
+	// })
+	// .setTween("#contact-header", 0.5, {scale: 1.5})
+	// .setClassToggle("#back-to-top", "contact-active")
+	// .addTo($controller);
 
 	// Footer Scenes
 	var otherNavScene = new ScrollMagic.Scene({
 		triggerElement: "#footer-navbar", triggerHook: 'onEnter'
 	})
 	.setTween("#footer-nav-content", 0.5, {opacity: 1})
-	// .addIndicators({name: "1 (duration: 0)"})
 	.addTo($controller);
 
 	// Back-to-top Scenes
