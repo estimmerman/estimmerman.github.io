@@ -34,6 +34,7 @@
 		    <ul class="nav navbar-nav navbar-right">
 		    	<li><a href="#about">About</a></li>
 				<li><a href="#experience">Experience</a></li>
+				<li><a href="#projects">Projects</a></li>
 				<li><a href="http://www.linkedin.com/in/erictimmerman" target="_blank">LinkedIn</a></li>
 				<li><a href="http://github.com/estimmerman" target="_blank">GitHub</a></li>
 	    		<li><a href="assets/Eric_Timmerman_Resume.pdf" target="_blank">Resume</a></li>
@@ -54,7 +55,7 @@
 					    <img src="images/about_profile.jpg" alt="Eric Timmerman" id="about-image" class="media-object"/>
 					  </div>
 					  <div class="media-body">
-					    <p id="about-bio">I'm Eric, a freshman at <a href="http://www.seas.harvard.edu/computer-science" target="_blank">Harvard</a> studying Computer Science with a passion for sleek UI design, machine learning, and all things code. In my free time I enjoy playing basketball, adventuring with friends for new bites, and binge-watching Netflix.</p>
+					    <p id="about-bio">I'm Eric, a freshman at <a href="http://www.seas.harvard.edu/computer-science" target="_blank">Harvard</a> studying Computer Science with a passion for sleek UI design, machine learning, and all things code. In my free time I enjoy playing basketball, adventuring with friends for new bites, and Bollywood dancing.</p>
 					  </div>
 					</div>
 				</div>
@@ -64,17 +65,17 @@
     				<img src="images/about_profile.jpg" alt="Eric Timmerman" id="about-image"/>
     			</div>
     			<div class="col-xs-12">
-    				<p id="about-bio-xs">I'm Eric, a freshman at <a href="http://www.seas.harvard.edu/computer-science" target="_blank">Harvard</a> studying Computer Science with a passion for sleek UI design, machine learning, and all things code. In my free time I enjoy playing basketball, adventuring with friends for new bites, and binge-watching Netflix.</p>
+    				<p id="about-bio-xs">I'm Eric, a freshman at <a href="http://www.seas.harvard.edu/computer-science" target="_blank">Harvard</a> studying Computer Science with a passion for sleek UI design, machine learning, and all things code. In my free time I enjoy playing basketball, adventuring with friends for new bites, and Bollywood dancing.</p>
     			</div>
     		</div>
     	</section>
     	<section id="experience" class="anchor-tag">
     		<h1 id="experience-header" class="section-header">Experience</h1>
-    		<ol id="experienceList">
+    		<ol class="card-list">
     			<li>
     				<div class="row experience-bar">
 		    			<h1 class="experience-header">Yiftee - Local Gifts, On-The-Go</h1>
-		    			<h4 class="experience-dates">May - Aug '14 | Jan - Aug '15</h4>
+		    			<h4 class="experience-dates">May - Aug '14 , Jan - Aug '15 | Menlo Park, CA</h4>
 		    			<h5 class="experience-description">Yiftee is an eGifting platform for merchants, enterprises, and consumers.</h5>
 		    			<h5 class="experience-languages">(Ruby on Rails, AngularJS, Android Development, Java, HTML, CSS, jQuery, Javascript, XML)</h5>
     				</div>
@@ -192,7 +193,7 @@
 		    	<li>
     				<div class="row experience-bar">
 		    			<h1 class="experience-header">Babajob</h1>
-		    			<h4 class="experience-dates">Sep - Dec '14</h4>
+		    			<h4 class="experience-dates">Sep - Dec '14 | Bangalore, India</h4>
 		    			<h5 class="experience-description">Babajob is one of India's largest job portals with a focus on the blue-collar job sector.</h5>
 		    			<h5 class="experience-languages">(C#, D3.js, HTML, CSS, jQuery, Javascript)</h5>
     				</div>
@@ -234,6 +235,34 @@
 					</div>
 		    	</li>
 		    </ol>
+    	</section>
+    	<section id="projects" class="anchor-tag">
+    		<h1 id="projects-header" class="section-header">Projects</h1>
+    		<ol class="card-list">
+    			<li class="card">
+    				<div class="mdl-card mdl-shadow--2dp project-card">
+					  <div class="mdl-card__title codepeer">
+					    <i class="fa fa-share-alt fa-inverse fa-5x project-card-icon"></i>
+					  </div>
+					  <div class="mdl-card__supporting-text">
+					  	<div class="col-sm-12 no-padding m-bottom-10">
+						  	<h2 class="mdl-card__title-text col-sm-6 no-padding">CodePeer</h2>
+						  	<div class="col-sm-6 align-right">
+							  	<a class="btn btn-sm btn-primary codepeer-btn" href="https://codepeer.herokuapp.com" target="_blank">Check it out!</a>
+						  	</div>
+					  	</div>
+					  	<p class="project-card-overview">CodePeer is a tool which assists collaboration between both students and tutors in computer science through a synchronized code sharing and chatting application.</p>
+					    <div id="projects-codepeer-more" class="card-extra-content">
+					    	<p class="p-small">Having seen in person the hectic office hours for the introduction class to computer science at Harvard, CS50, which enrolls 600+ students a year, I decided there must be a better way to allow tutors and peer teaching fellows to assist students. Instead of raising your hand for an hour while waiting to get help, why not bring office hours online? This is where CodePeer comes into play. Originally intended for tutors to help students with tough assignments, CodePeer is now a tool that allows collaboration between any number of users.</p>
+					    	<iframe width="560" height="315" src="https://www.youtube.com/embed/KgpZ5VMd1VI" frameborder="0" allowfullscreen></iframe>
+					    </div>
+					  </div>
+					  <div class="mdl-card__actions mdl-card--border expand-action mdl-button mdl-js-button" onclick="expandCard('projects-codepeer-more', this)">
+					  	<i class="fa fa-ellipsis-h fa-2x expand-icon codepeer-dark"></i>
+					  </div>
+					</div>
+		    	</li>
+    		</ol>
     	</section>
 		<nav class="navbar navbar-default" id="footer-navbar">
 		  <div class="container" id="footer-nav-content">
