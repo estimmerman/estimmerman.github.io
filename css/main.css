@@ -280,6 +280,15 @@ section .section-header{
 	max-width: 400px;
 }
 
+.card-list .experience-description a {
+	color: white;
+	text-decoration: underline;
+}
+
+.card-list .experience-description a:hover {
+	color: #e6e6e6;
+}
+
 .press-release {
 	font-size: 14px;
 }
